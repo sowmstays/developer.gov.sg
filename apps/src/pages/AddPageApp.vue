@@ -2,15 +2,21 @@
   <div>
     <div class="row margin--top is-multiline background-light">
       <div class="col is-12">
-        <p class="has-text-weight-semibold description">
-          Help everyone discover what the Singapore Government offers.
-          <button
-            class="sgds-button is-secondary has-text-weight-semibold"
-            v-on:click="showAddPageForm = !showAddPageForm"
-          >
-            Suggest new {{ this.collection.toLowerCase() }}
-          </button>
+        <h5 class="has-text-weight-semibold description">
+          Have something to contribute?
+        </h5>
+        <p>
+          Submit your content below, or
+          <a href="https://form.gov.sg/5df99bf67459d7001233d0b8"
+            >let us know your suggestions</a
+          >.
         </p>
+        <button
+          class="sgds-button is-secondary has-text-weight-semibold"
+          v-on:click="showAddPageForm = !showAddPageForm"
+        >
+          Contribute new {{ this.collection.toLowerCase() }}
+        </button>
       </div>
 
       <Modal v-if="showAddPageForm">
