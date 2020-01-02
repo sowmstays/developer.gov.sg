@@ -2,3 +2,13 @@
 title: Ship Documentation
 layout: layout-docs
 ---
+
+<div id="{{ page.title | slugify }}"></div>
+<script>
+  window.$docsify = {
+    name: "{{ page.title }}",
+    el: "#{{ page.title | slugify }}",
+    coverpage: "coverpage.md",
+    loadSidebar: "sidebar.md"
+  };
+</script>

@@ -6,14 +6,6 @@
   <nav>
     <a href="/">Developer Portal</a>
   </nav>
-  <div id="{{ page.title | slugify }}"></div>
-  <script>
-    window.$docsify = {
-      name: "{{ page.title }}",
-      el: "#{{ page.title | slugify }}",
-      coverpage: "coverpage.md",
-      loadSidebar: "sidebar.md"
-    };
-  </script>
+  {{ content }}
   <script async defer src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 </body>
