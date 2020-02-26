@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 gem "jekyll", "~> 4.0.0"
-gem "html-proofer"
+gem "html-proofer", ">= 3.15.1"
 group :jekyll_plugins do
   gem "jekyll-seo-tag"
 end
